@@ -137,7 +137,6 @@ code {
       width: 60%;
       border-collapse: collapse;
       margin: 15px 0;
-      font-size:2.2rem;
     }
     .info-table th, .info-table td,.tag-table th, .tag-table td {
       border: 1px solid #2c88d9;
