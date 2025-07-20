@@ -125,7 +125,7 @@ code {
     height: auto;
   }
   .tag-table{
-    width: 100%;
+    width: 70%;
     overflow-x:auto;
     border-collapse: collapse;
   }
