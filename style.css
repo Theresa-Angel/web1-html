@@ -125,7 +125,7 @@ code {
     height: auto;
   }
   .tag-table{
-    width: 70%;
+    width: 100%;
     overflow-x:auto;
     border-collapse: collapse;
   }
@@ -134,7 +134,7 @@ code {
     border: 1px solid #ccc;
   }
   .info-table {
-      width: 70%;
+      width: 100%;
       border-collapse: collapse;
       margin: 15px 0;
     }
@@ -165,7 +165,6 @@ code {
       margin: 25px 0;
       border: 3px dashed #0077cc;
       border-radius: 8px;
-      max-width: 700px;
     }
     .tag-box {
       background: #fff;
@@ -173,7 +172,6 @@ code {
       margin: 25px 0;
       border: 3px dashed #0077cc;
       border-radius: 8px;
-      max-width: 700px;
     }
     .syntax-box, .example-box {
       padding: 12px;
