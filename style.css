@@ -125,8 +125,8 @@ code {
     max-width: 100%;
     height: auto;
   }
-  .tag-table, .info-table {
-    width: 80%;
+  .tag-table{
+    width: 50%;
     border-collapse: collapse;
   }
   .tag-table th, .tag-table td, .info-table th, .info-table td {
