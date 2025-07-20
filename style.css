@@ -163,6 +163,7 @@ code {
       background: #fff;
       padding: 15px;
       margin: 25px 0;
+      width=100%;
       border: 3px dashed #0077cc;
       border-radius: 8px;
     }
@@ -170,6 +171,7 @@ code {
       background: #fff;
       padding: 15px;
       margin: 25px 0;
+      width=100%;
       border: 3px dashed #0077cc;
       border-radius: 8px;
     }
