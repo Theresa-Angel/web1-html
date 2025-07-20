@@ -126,6 +126,7 @@ code {
   }
   .tag-table{
     width: 50%;
+    overflow-x:auto;
     border-collapse: collapse;
   }
   .tag-table th, .tag-table td, .info-table th, .info-table td {
