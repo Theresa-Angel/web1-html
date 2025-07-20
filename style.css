@@ -30,7 +30,7 @@ pre{
   background-color: #f0f4ff;
   color: #002855;
   padding: 15px;
-  max-width: 400px;
+  max-width: 600px;
   border-left: 4px solid #005aab;
   border-radius: 4px;
   overflow-x: auto;
@@ -134,7 +134,7 @@ code {
     border: 1px solid #ccc;
   }
   .info-table {
-      width: 80%;
+      width: 60%;
       border-collapse: collapse;
       margin: 15px 0;
     }
