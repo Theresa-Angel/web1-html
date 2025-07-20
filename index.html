@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>HTML Basics</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+<div class="content">
+<div id="pdfContent">
+<header>
+<h1>UNIT - 1</h1>
+<h1><b>HTML</b></h1>
+</header>
+<main>
+<section id="introduction">
+<h2>Introduction to HTML</h2>
+<li>HTML stands for <b>Hyper Text Markup Language.</b></li>
+<li>HTML is the standard markup language for creating Web pages.</li>
+<li>HTML describes the structure of a Web page using a system of tags and attributes.</li>
+<li>HTML consists of a series of elements.</li>
+<li>HTML elements tell the browser how to display the content.</li>
+<li>HTML documents are plain-text files saved with an <b>.html extension.</b></li>
+</section>
+<section id="simple-html-document">
+<h2>A Simple HTML Document</h2>
+<h3>Example</h3>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;h1&gt;My First Heading&lt;/h1&gt;
+  &lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+  </pre>
+<div class="explanation">
+<h3>Example Explained</h3>
+<p>The <code>&lt;!DOCTYPE html&gt;</code> declaration defines that this document is an HTML5 document.</p>
+<p>The <code>&lt;html&gt;</code> element is the root element of an HTML page.</p>
+<p>The <code>&lt;head&gt;</code> element contains meta information about the HTML page.</p>
+<p>The <code>&lt;title&gt;</code> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab).</p>
+<p>The <code>&lt;body&gt;</code> element defines the document's body and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</p>
+<p>The <code>&lt;h1&gt;</code> element defines a large heading.</p>
+<p>The <code>&lt;p&gt;</code> element defines a paragraph.</p>
+</div>
+</section>
+<div class="info">
+<h2>History of HTML</h2>
+<p>
+    HTML (HyperText Markup Language) was invented by Tim Berners-Lee in 1991. The first version (HTML 1.0) was designed to create and link simple documents over the Internet. Over time, new versions added more tags, multimedia support, and better styling capabilities.
+  </p>
+<ul>
+<li><strong>1991:</strong> HTML 1.0 (initial concept)</li>
+<li><strong>1995:</strong> HTML 2.0 standardized by IETF</li>
+<li><strong>1997–1999:</strong> HTML 3.2 and 4.01 by W3C</li>
+<li><strong>2014:</strong> HTML5 finalized — major upgrade with multimedia and semantic elements</li>
+</ul>
+</div>
+<div class="info">
+<h2>Features of HTML</h2>
+<ul class="features-list">
+<li><i class="fas fa-check-circle feature-icon"></i> Simple to learn and use</li>
+<li><i class="fas fa-globe feature-icon"></i> Platform-independent</li>
+<li><i class="fas fa-video feature-icon"></i> Supports multimedia (audio, video, images)</li>
+<li><i class="fas fa-link feature-icon"></i> Allows linking via hyperlinks</li>
+<li><i class="fas fa-code feature-icon"></i> Supports semantic structure (header, nav, article, etc.)</li>
+<li><i class="fas fa-puzzle-piece feature-icon"></i> Works with CSS and JavaScript for styling and interactivity</li>
+</ul>
+</div>
+<div class="info-section1" id="apps-html">
+<h2>Applications &amp; Limitations of HTML</h2>
+<!-- Applications -->
+<div class="tag-box1">
+<h3>🛠️ Applications of HTML</h3>
+<ul>
+<li><strong>Web Development:</strong> Backbone of every webpage—structures content and embeds media.</li>
+<li><strong>Web Applications:</strong> Builds complex apps like Google Docs, Trello (HTML + CSS + JS).</li>
+<li><strong>Emails:</strong> Used in HTML email templates to create rich interactive layouts.</li>
+<li><strong>Mobile Apps:</strong> Via frameworks like Cordova/PhoneGap, HTML5 powers hybrid mobile apps.</li>
+</ul>
+</div>
+<!-- Limitations -->
+<div class="tag-box1">
+<h3>⚠️ Limitations of HTML</h3>
+<ul>
+<li><strong>No Logic or Functionality:</strong> Cannot manage interactivity or dynamic logic on its own.</li>
+<li><strong>SEO Limitations:</strong> Structure alone isn’t sufficient—metadata and proper structuring are vitaL.</li>
+<li><strong>Limited Styles:</strong> Can’t handle complex presentation—CSS is essential for modern layout/styling.</li>
+</ul>
+</div>
+<!-- HTML5 Enhancements -->
+<div class="tag-box1">
+<h3>🚀 HTML5: Enhancements &amp; New Features</h3>
+<ul>
+<li><strong>Semantic Tags:</strong> Elements like <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;footer&gt;</code> improve structure and accessibility.</li>
+<li><strong>Multimedia Support:</strong> Built-in <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> tags remove the need for external plugins.</li>
+<li><strong>APIs:</strong> HTML5 adds powerful browser APIs like Geolocation, Canvas, Web Storage, and Web Workers for richer UX.</li>
+</ul>
+</div>
+</div>
+<section id="web-browsers">
+<h2>Web Browsers</h2>
+<p>The purpose of a web browser (<strong>Chrome</strong>, <strong>Edge</strong>, <strong>Firefox</strong>, <strong>Safari</strong>) is to read HTML documents and display them correctly.</p>
+<p>A browser does not display the HTML tags, but uses them to determine how to display the document:</p>
+<h3>View in Browser</h3>
+<p>When you open an HTML file in a browser, it renders the visual structure — not the tags themselves.</p>
+<img alt="HTML page opened in browser" class="browser-image" src="browser-view.png">
+</section>
+<section id="sgml">
+<h2>What is SGML?</h2>
+<li>SGML (Standard Generalized Markup Language) is a standard for defining generalized markup languages for documents.</li>
+<li>HTML is an application of SGML.</li>
+<li>SGML stands for <strong>Standard Generalized Markup Language.</strong></li>
+<li>It is derived from <strong>GML (Generalized Markup Language)</strong>, which allowed users to work on standardized formatting styles for electronic documents.</li>
+<li>It was developed and standardized by the <strong>International Organization for Standardization (ISO)</strong> in 1986.</li>
+<li>SGML specifies the rules for tagging elements. These tags can then be interpreted to lay out document components in specific ways.</li>
+<p><strong>Use Case:</strong></p>
+<p>SGML is used extensively to manipulate massive documents that undergo frequent revisions and need to be published in different formats. However, due to its complexity, it is not widely used on personal computers.</p>
+<h3><b>Components of SGML</b></h3>
+<ul>
+<li>SGML provides a way to describe relationships between <strong>entities</strong>, <strong>elements</strong>, and <strong>attributes</strong>.</li>
+<li>It defines how a computer can recognize the parts of a document using markup.</li>
+<li>Rules help the computer identify where text elements start and end.</li>
+<li><strong>Document Type Definition (DTD)</strong> is used in SGML to define each element in a way a computer understands.</li>
+</ul>
+<h3><b>Advantages of SGML</b></h3>
+<ul class="adv-disadv-list">
+<li><i class="fas fa-check-circle adv-icon"></i> Highly customizable and extensible markup standard.</li>
+<li><i class="fas fa-check-circle adv-icon"></i> Suitable for large, complex documents and systems.</li>
+<li><i class="fas fa-check-circle adv-icon"></i> Separates content from presentation.</li>
+<li><i class="fas fa-check-circle adv-icon"></i> Platform-independent and widely adopted in publishing industries.</li>
+</ul>
+<h3><b>Disadvantages of SGML</b></h3>
+<ul class="adv-disadv-list">
+<li><i class="fas fa-times-circle disadv-icon"></i> Very complex syntax compared to HTML or XML.</li>
+<li><i class="fas fa-times-circle disadv-icon"></i> Steep learning curve for beginners.</li>
+<li><i class="fas fa-times-circle disadv-icon"></i> Requires specialized parsers and tools.</li>
+<li><i class="fas fa-times-circle disadv-icon"></i> Less suitable for lightweight or modern web development.</li>
+</ul>
+<h2>Structure of SGML</h2>
+<p><strong>General Structure:</strong></p>
+<pre>
+&lt;mainObject&gt;
+    &lt;subObject&gt;
+    &lt;/subObject&gt;
+&lt;/mainObject&gt;
+  </pre>
+<p><strong>File Extension:</strong></p>
+<pre>File_Name.sgml</pre>
+<p><strong>Syntax:</strong></p>
+<pre>
+&lt;NAME TYPE="user"&gt;
+    Theresa Angel
+&lt;/NAME&gt;
+  </pre>
+<h3>Example 1: SGML Code</h3>
+<pre>
+&lt;EMAIL&gt;
+    &lt;SENDER&gt;
+        &lt;PERSON&gt;
+            &lt;FIRSTNAME&gt;THERESA&lt;/FIRSTNAME&gt;
+        &lt;/PERSON&gt;
+    &lt;/SENDER&gt;
+    &lt;BODY&gt;
+        &lt;p&gt;A Computer science student&lt;/p&gt;
+    &lt;/BODY&gt;
+&lt;/EMAIL&gt;
+  </pre>
+<h3>Output:</h3>
+<p><em>THERESA</em></p>
+<p><em>A Computer Science Student</em></p>
+</section>
+
+<section id="tags">
+<h2>HTML Tags</h2>
+<li>HTML Tags are fundamental elements used to structure and format content on web pages.</li>
+<li>They provide instructions to web browsers on how to render text, images, links, and other media.</li>
+<li>HTML tags are enclosed in angle brackets <code>&lt;&gt;</code> and usually come in pairs: an opening tag and a closing tag.</li>
+<li>The closing tag has the same name as the opening tag, but includes a forward slash <code>/</code>.</li>
+<li>The opening tag marks the beginning of an element, and the closing tag marks the end.</li>
+<h3>Example:</h3>
+<pre>
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+  </pre>
+<p>Some tags are self-closing, meaning they don’t require a closing tag. Examples include:</p>
+<pre>
+&lt;img src="image.png" alt="Example Image"&gt;
+&lt;br&gt;
+  </pre>
+<p>Essential tags for defining an HTML document structure include:</p>
+<ul>
+<li><code>&lt;!DOCTYPE html&gt;</code></li>
+<li><code>&lt;html&gt;</code></li>
+<li><code>&lt;head&gt;</code></li>
+<li><code>&lt;body&gt;</code></li>
+</ul>
+</section>
+<h3>Single (Self-closing) Tags</h3>
+<ul>
+<li><code>&lt;br&gt;</code> - Line Break</li>
+<li><code>&lt;img&gt;</code> - Image</li>
+<li><code>&lt;hr&gt;</code> - Horizontal Rule</li>
+<li><code>&lt;input&gt;</code> - Input Field</li>
+</ul>
+<h3>Dual Tags</h3>
+<ul>
+<li><code>&lt;p&gt;...&lt;/p&gt;</code> - Paragraph</li>
+<li><code>&lt;h1&gt;...&lt;/h1&gt;</code> - Heading</li>
+<li><code>&lt;div&gt;...&lt;/div&gt;</code> - Division</li>
+<li><code>&lt;a&gt;...&lt;/a&gt;</code> - Anchor Link</li>
+</ul>
+<h3>Common HTML Tags with Examples</h3>
+<div class="tag-table-container">
+<table class="tag-table">
+<thead>
+<tr>
+<th>Tag</th>
+<th>Description</th>
+<th>Syntax</th>
+<th>Example Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;!DOCTYPE html&gt;</code></td>
+<td>Defines the document type.</td>
+<td><code>&lt;!DOCTYPE html&gt;</code></td>
+<td><em>Not visible in output</em></td>
+</tr>
+<tr>
+<td><code>&lt;html&gt;</code></td>
+<td>Root of an HTML document.</td>
+<td><code>&lt;html&gt;...&lt;/html&gt;</code></td>
+<td><em>Structural tag only</em></td>
+</tr>
+<tr>
+<td><code>&lt;head&gt;</code></td>
+<td>Metadata container.</td>
+<td><code>&lt;head&gt;...&lt;/head&gt;</code></td>
+<td><em>Not rendered directly</em></td>
+</tr>
+<tr>
+<td><code>&lt;title&gt;</code></td>
+<td>Page title (in browser tab).</td>
+<td><code>&lt;title&gt;My Page&lt;/title&gt;</code></td>
+<td><em>See browser tab</em></td>
+</tr>
+<tr>
+<td><code>&lt;body&gt;</code></td>
+<td>Visible page content.</td>
+<td><code>&lt;body&gt;...&lt;/body&gt;</code></td>
+<td><em>Container for content</em></td>
+</tr>
+<tr>
+<td><code>&lt;h1&gt;</code></td>
+<td>Main heading.</td>
+<td><code>&lt;h1&gt;Welcome&lt;/h1&gt;</code></td>
+<td><div class="preview"><h1>Welcome</h1></div></td>
+</tr>
+<tr>
+<td><code>&lt;p&gt;</code></td>
+<td>Paragraph text.</td>
+<td><code>&lt;p&gt;Hello world&lt;/p&gt;</code></td>
+<td><div class="preview"><p>Hello world</p></div></td>
+</tr>
+<tr>
+<td><code>&lt;a&gt;</code></td>
+<td>Hyperlink</td>
+<td><code>&lt;a href="#"&gt;Click&lt;/a&gt;</code></td>
+<td><div class="preview"><a href="#">Click</a></div></td>
+</tr>
+<tr>
+<td><code>&lt;br&gt;</code></td>
+<td>Line break</td>
+<td><code>Line1&lt;br&gt;Line2</code></td>
+<td><div class="preview">Line1<br/>Line2</div></td>
+</tr>
+<tr>
+<td><code>&lt;img&gt;</code></td>
+<td>Displays image</td>
+<td><code>&lt;img src="image.jpg"&gt;</code></td>
+<td><div class="preview"><img alt="image" src="browser-view.png" width="100"/></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="other-tags">
+<h2>Other Useful Tags</h2>
+<ul>
+<li><code>&lt;ul&gt;</code> - Unordered List</li>
+<li><code>&lt;ol&gt;</code> - Ordered List</li>
+<li><code>&lt;table&gt;</code> - Table</li>
+<li><code>&lt;span&gt;</code> - Inline Container</li>
+<li><code>&lt;strong&gt;</code> - Bold Importance</li>
+<li><code>&lt;em&gt;</code> - Emphasis</li>
+</ul>
+</section>
+
+<section id="head-section">
+<h2>Head Section</h2>
+<li>The <code>&lt;head&gt;</code> section of an HTML document contains metadata and links to scripts, stylesheets, and other resources that are not directly displayed on the webpage.</li>
+<li>It is placed before the <code>&lt;body&gt;</code> tag.</li>
+<h3>Common Tags Found in &lt;head&gt;:</h3>
+<ul class="features-list">
+<li><i class="fas fa-tag feature-icon"></i> <code>&lt;title&gt;</code> – Sets the page title shown in the browser tab</li>
+<li><i class="fas fa-tag feature-icon"></i> <code>&lt;style&gt;</code> – Defines internal CSS styles</li>
+<li><i class="fas fa-tag feature-icon"></i> <code>&lt;meta&gt;</code> – Provides metadata like charset, description, author, etc.</li>
+<li><i class="fas fa-tag feature-icon"></i> <code>&lt;link&gt;</code> – Links to external CSS or resources</li>
+<li><i class="fas fa-tag feature-icon"></i> <code>&lt;script&gt;</code> – Embeds JavaScript or links to an external JS file</li>
+<li><i class="fas fa-tag feature-icon"></i> <code>&lt;base&gt;</code> – Sets a base URL for relative links</li>
+</ul>
+<h3>Metadata Tags Examples:</h3>
+<ul class="features-list">
+<li><code>&lt;meta charset="UTF-8"&gt;</code></li>
+<li><code>&lt;meta name="description" content="Intro to HTML"&gt;</code></li>
+<li><code>&lt;meta name="author" content="Your Name"&gt;</code></li>
+<li><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></li>
+</ul>
+<!-- TITLE -->
+<div class="tag-details">
+<h3>&lt;title&gt;</h3>
+<p><strong>Description:</strong> Sets the page title shown in the browser tab and used by search engines.</p>
+<div class="syntax-box">
+<strong>Syntax:</strong>
+<pre><code>&lt;title&gt;Page Title&lt;/title&gt;</code></pre>
+</div>
+<div class="example-box">
+<strong>Example:</strong>
+<pre><code>&lt;title&gt;My Website&lt;/title&gt;</code></pre>
+</div>
+<p><strong>Additional Info:</strong> Should be unique and descriptive for SEO purposes.</p>
+</div>
+<!-- STYLE -->
+<div class="tag-details">
+<h3>&lt;style&gt;</h3>
+<p><strong>Description:</strong> Contains internal CSS to style the webpage.</p>
+<div class="syntax-box">
+<strong>Syntax:</strong>
+<pre><code>&lt;style&gt;
+  selector {
+    property: value;
+  }
+&lt;/style&gt;</code></pre>
+</div>
+<div class="example-box">
+<strong>Example:</strong>
+<pre><code>&lt;style&gt;
+  body {
+    background-color: lightblue;
+  }
+&lt;/style&gt;</code></pre>
+</div>
+<p><strong>Additional Info:</strong> Use for quick styles. For large projects, prefer external stylesheets.</p>
+</div>
+<!-- META -->
+<div class="tag-details">
+<h3>&lt;meta&gt;</h3>
+<p><strong>Description:</strong> Provides metadata about the HTML document such as character encoding and description.</p>
+<div class="syntax-box">
+<strong>Syntax:</strong>
+<pre><code>&lt;meta name="value" content="value"&gt;</code></pre>
+</div>
+<div class="example-box">
+<strong>Example:</strong>
+<pre><code>&lt;meta charset="UTF-8"&gt;
+&lt;meta name="description" content="Learn HTML Basics"&gt;</code></pre>
+</div>
+<p><strong>Additional Info:</strong> Important for search engine optimization and browser rendering.</p>
+</div>
+<!-- LINK -->
+<div class="tag-details">
+<h3>&lt;link&gt;</h3>
+<p><strong>Description:</strong> Links external files like stylesheets or icons to the document.</p>
+<div class="syntax-box">
+<strong>Syntax:</strong>
+<pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+</div>
+<div class="example-box">
+<strong>Example:</strong>
+<pre><code>&lt;link rel="stylesheet" href="main.css"&gt;</code></pre>
+</div>
+<p><strong>Additional Info:</strong> Place all external stylesheets in the head for faster page load.</p>
+</div>
+<!-- SCRIPT -->
+<div class="tag-details">
+<h3>&lt;script&gt;</h3>
+<p><strong>Description:</strong> Adds JavaScript to your HTML page either inline or via external file.</p>
+<div class="syntax-box">
+<strong>Syntax:</strong>
+<pre><code>&lt;script src="script.js"&gt;&lt;/script&gt;</code></pre>
+</div>
+<div class="example-box">
+<strong>Example:</strong>
+<pre><code>&lt;script&gt;
+  alert('Hello World');
+&lt;/script&gt;</code></pre>
+</div>
+<p><strong>Additional Info:</strong> Place at the end of the body for better performance unless essential in head.</p>
+</div>
+<!-- BASE -->
+<div class="tag-details">
+<h3>&lt;base&gt;</h3>
+<p><strong>Description:</strong> Sets the base URL for all relative links on the page.</p>
+<div class="syntax-box">
+<strong>Syntax:</strong>
+<pre><code>&lt;base href="https://example.com/"&gt;</code></pre>
+</div>
+<div class="example-box">
+<strong>Example:</strong>
+<pre><code>&lt;base href="https://mywebsite.com/"&gt;</code></pre>
+</div>
+<p><strong>Additional Info:</strong> Only one &lt;base&gt; tag should be used per document, and it must be in the head.</p>
+</div>
+</section>
+
+<section id="body-section">
+<h2>Body Section</h2>
+<div class="tag-details1">
+<h3>Definition:</h3>
+<p>The <code>&lt;body&gt;</code> element represents the content of an HTML document. It contains all the visible elements on the web page such as text, images, links, tables, and more.</p>
+<h3>Syntax:</h3>
+<div class="syntax-box1">
+        &lt;body&gt;<br/>
+          ...content...<br/>
+        &lt;/body&gt;
+      </div>
+<h3>Key Points:</h3>
+<ul>
+<li>Placed directly after the &lt;head&gt; tag.</li>
+<li>Can contain structural elements like headings, paragraphs, sections, images, forms, and scripts.</li>
+<li>Supports various global and special attributes for customization.</li>
+</ul>
+<h3>Specifications:</h3>
+<table class="info-table">
+<tr><th>Feature</th><th>Details</th></tr>
+<tr><td>Tag Name</td><td>&lt;body&gt;</td></tr>
+<tr><td>Placement</td><td>After the &lt;head&gt; section and inside &lt;html&gt;</td></tr>
+<tr><td>Purpose</td><td>Holds all the visible content shown to the user</td></tr>
+<tr><td>End Tag</td><td>Required (&lt;/body&gt;)</td></tr>
+</table>
+<h3>Special Attributes of &lt;body&gt; Tag:</h3>
+<table class="info-table">
+<tr><th>Attribute</th><th>Description</th><th>Example</th><th>Output</th></tr>
+<tr>
+<td>bgcolor</td>
+<td>Sets background color of the page</td>
+<td><code>&lt;body bgcolor="lightblue"&gt;</code></td>
+<td>Background becomes light blue</td>
+</tr>
+<tr>
+<td>text</td>
+<td>Sets the text color</td>
+<td><code>&lt;body text="black"&gt;</code></td>
+<td>Text appears black</td>
+</tr>
+<tr>
+<td>link</td>
+<td>Color of unvisited links</td>
+<td><code>&lt;body link="blue"&gt;</code></td>
+<td>Links appear blue</td>
+</tr>
+<tr>
+<td>vlink</td>
+<td>Color of visited links</td>
+<td><code>&lt;body vlink="purple"&gt;</code></td>
+<td>Visited links are purple</td>
+</tr>
+<tr>
+<td>alink</td>
+<td>Color of active link (while being clicked)</td>
+<td><code>&lt;body alink="red"&gt;</code></td>
+<td>Active links flash red</td>
+</tr>
+</table>
+<h3>Examples:</h3>
+<div class="example-box1">
+<strong>Example with Attributes:</strong><br/>
+        &lt;body bgcolor="lightyellow" text="green" link="blue" vlink="purple" alink="red"&gt;<br/>
+          &lt;p&gt;This is some sample content.&lt;/p&gt;<br/>
+          &lt;a href="#"&gt;A sample link&lt;/a&gt;<br/>
+        &lt;/body&gt;
+      </div>
+</div>
+</section>
+<section id="forms">
+<h2>HTML Forms</h2>
+<div class="tag-box1">
+<h3>Definition:</h3>
+<p>The <code>&lt;form&gt;</code> element is used to collect user input. It can include elements like text fields, radio buttons, checkboxes, submit buttons, and more.</p>
+<h3>Key Points:</h3>
+<ul>
+<li>Used to send user input to a server</li>
+<li>Requires <code>action</code> and <code>method</code> attributes</li>
+<li>Form elements must be placed inside the form tag</li>
+</ul>
+<h3>Syntax:</h3>
+<div class="syntax-box1">
+        &lt;form action="submit.php" method="post"&gt;<br/>
+          ...input elements...<br/>
+        &lt;/form&gt;
+      </div>
+<h3>Form Tag Attributes:</h3>
+<table class="info-table">
+<tr><th>Attribute</th><th>Description</th></tr>
+<tr><td>action</td><td>URL to send form data to</td></tr>
+<tr><td>method</td><td>HTTP method (GET or POST)</td></tr>
+<tr><td>target</td><td>Specifies where to display the response</td></tr>
+<tr><td>autocomplete</td><td>Enables/disables auto-completion</td></tr>
+</table>
+</div>
+<!-- INPUT TEXT -->
+<div class="tag-box">
+<h3>&lt;input type="text"&gt;</h3>
+<ul>
+<li>Used for single-line text input</li>
+<li>Needs a <code>name</code> attribute to identify the field</li>
+</ul>
+<div class="example-box1">
+<strong>Example:</strong><br/>
+        &lt;form&gt;<br/>
+          Name: &lt;input type="text" name="username"&gt;<br/>
+        &lt;/form&gt;
+      </div>
+<p><strong>Output:</strong></p>
+<form>
+        Name: <input name="username" type="text"/>
+</form>
+</div>
+<!-- INPUT PASSWORD -->
+<div class="tag-box">
+<h3>&lt;input type="password"&gt;</h3>
+<ul>
+<li>Masks the characters typed by the user</li>
+<li>Commonly used for login forms</li>
+</ul>
+<div class="example-box1">
+<strong>Example:</strong><br/>
+        &lt;form&gt;<br/>
+          Password: &lt;input type="password" name="pass"&gt;<br/>
+        &lt;/form&gt;
+      </div>
+<p><strong>Output:</strong></p>
+<form>
+        Password: <input name="pass" type="password"/>
+</form>
+</div>
+<!-- RADIO BUTTON -->
+<div class="tag-box">
+<h3>&lt;input type="radio"&gt;</h3>
+<ul>
+<li>Select only one option from a group</li>
+<li>All radios must share the same <code>name</code> attribute</li>
+</ul>
+<div class="example-box1">
+<strong>Example:</strong><br/>
+        &lt;form&gt;<br/>
+          &lt;input type="radio" name="gender" value="male"&gt; Male<br/>
+          &lt;input type="radio" name="gender" value="female"&gt; Female<br/>
+        &lt;/form&gt;
+      </div>
+<p><strong>Output:</strong></p>
+<form>
+<input name="gender" type="radio" value="male"/> Male
+        <input name="gender" type="radio" value="female"/> Female
+      </form>
+</div>
+<!-- CHECKBOX -->
+<div class="tag-box">
+<h3>&lt;input type="checkbox"&gt;</h3>
+<ul>
+<li>Allows multiple selections</li>
+<li>Each checkbox has its own name and value</li>
+</ul>
+<div class="example-box1">
+<strong>Example:</strong><br/>
+        &lt;form&gt;<br/>
+          &lt;input type="checkbox" name="hobby" value="reading"&gt;Reading<br/>
+          &lt;input type="checkbox" name="hobby" value="music"&gt; Music<br/>
+        &lt;/form&gt;
+      </div>
+<p><strong>Output:</strong></p>
+<form>
+<input name="hobby" type="checkbox" value="reading"/> Reading
+        <input name="hobby" type="checkbox" value="music"/> Music
+      </form>
+</div>
+<!-- SUBMIT BUTTON -->
+<div class="tag-box">
+<h3>&lt;input type="submit"&gt;</h3>
+<ul>
+<li>Submits the form data to the server</li>
+<li>Can set <code>value</code> to change button text</li>
+</ul>
+<div class="example-box1">
+<strong>Example:</strong><br/>
+        &lt;form action="#"&gt;<br/>
+          &lt;input type="submit" value="Send"&gt;<br/>
+        &lt;/form&gt;
+      </div>
+<p><strong>Output:</strong></p>
+<form action="#">
+<input type="submit" value="Send"/>
+</form>
+</div>
+<!-- TEXTAREA -->
+<div class="tag-box">
+<h3>&lt;textarea&gt;</h3>
+<ul>
+<li>Multi-line text input</li>
+<li>Rows and cols control the size</li>
+</ul>
+<div class="example-box1">
+<strong>Example:</strong><br/>
+        &lt;form&gt;<br/>
+          &lt;textarea rows="4" cols="30"&gt;&lt;/textarea&gt;<br/>
+        &lt;/form&gt;
+      </div>
+<p><strong>Output:</strong></p>
+<form>
+<textarea cols="30" rows="4"></textarea>
+</form>
+</div>
+</section>
+</main>
+</div>
+</div>
+<footer>
+<p>© INTRODUCTION TO HTML</p>
+<p> BY THERESA ANGEL</p>
+</footer>
+<script>
+    document.getElementById('downloadPDF').addEventListener('click', () => {
+      const element = document.getElementById('pdfContent');
+      const options = {
+        margin:       [0.5, 0.5, 0.5, 0.5],
+        filename:     'html-documentation.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2 },
+        jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+      };
+      html2pdf().set(options).from(element).save();
+    });
+
+
+
+     const sidebar = document.getElementById('sidebar');
+    const toggleBtn = document.getElementById('toggleBtn');
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('closed');
+    });
+  </script>
+</body>
+</html>
